@@ -105,4 +105,54 @@ function filterGallery(category) {
 // Default: Show all featured items
 filterGallery('all');
 
+// s-5
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+    const toggle = question.querySelector('.toggle');
+
+    // Toggle visibility of the answer
+    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+
+    // Toggle "+" and "-" symbol
+    toggle.textContent = toggle.textContent === '+' ? '-' : '+';
+  });
+});
+// s-6
+const bullets = document.querySelectorAll('.bullet');
+const testimonials = document.querySelectorAll('.testimonial');
+
+bullets.forEach((bullet, index) => {
+  bullet.addEventListener('click', () => {
+    // Remove active class from all bullets and testimonials
+    bullets.forEach(b => b.classList.remove('active'));
+    testimonials.forEach(t => t.classList.remove('active'));
+
+    // Add active class to clicked bullet and corresponding testimonial
+    bullet.classList.add('active');
+    testimonials[index].classList.add('active');
+  });
+});
+// footer
+document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+  const email = document.getElementById('email').value;
+
+  // Validate the email input
+  if (!validateEmail(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  // Redirect to a 404 error page
+  window.location.href = '/404.html';
+});
+
+// Email validation function
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
+
 
