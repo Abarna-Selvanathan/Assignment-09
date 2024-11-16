@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 09</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="main">
+        <header>
+            <nav class="navbar">
+                <div class="logo"> 
+                    <img src="img/favicon.png"> 
+                    PLANTEX
+                    
+                </div>
+                <ul> 
+                    <li><a href="#section1" class="nav-link" id="section1">Home</a></li>
+                    <li><a href="#section2" class="nav-link" id="section2">About</a></li>
+                    <li><a href="#section3" class="nav-link" id="section3">products</a></li>
+                    <li><a href="#section4" class="nav-link" id="section4">FAQs</a></li>
+                    <li><a href="#section5" class="nav-link" id="section5">Contact</a></li>
+                    <button id="theme-toggle">🌙</button>
+
+                </ul>
+               
+                
+            </nav>
+        </header>
+        <div class="home">
+            <div class="homepng">
+                <img src="img/home.png">
+            </div>    
+            <div class="homepara">
+                <h class="homeh1" >Plants will make your life better</h><br><br>
+                <h class="homeh2">Create incredible plant design for your offices or apartments, add freshness to your own home.
+                </h>
+                <br>
+                <button class="homebutton">Explore ▼</button>
+                
+            </div>
+        
+        </div>
+        <div class="about">
+            <div class="aboutpng">
+                <img src="img/about.png">
+            </div>    
+            <div class="aboutpara">
+                <h class="abouth1" >Who we really are & Why choose us</h><br><br>
+                <h class="abouth2">We have over 4000+ satisfied clients and our customer trust our plant process and delivery service every time.
+                </h><br><br>
+                <h class="abouth3">We always deliver on time.<br>
+                    We allow you to select and care for your plants.<br>
+                    We always place the plant in a clean, safe place.<br>
+                    100% money back guaranteed.</h><br><br>
+                <h3 class="abouth4">Shop Now ➔</h3>
+                
+            </div>
+        
+        </div>
+        <div class="section-2">
+            <div class="carousel-slide">
+                <!-- silde1 -->
+                <div class="section2png">
+                    <img src="img/product1.png">
+                   
+                    <div class="section2para">
+                        <h2>65% OFF</h2>
+                        <p>NEW PLANT</p>
+                        <p>Promia. 100% Natural, Organic & Plant Shop.</p>
+                        <a href="#" class="s-2btn">Discover Now</a>
+                    </div>     
+                
+                </div>
+                <!-- slide2 -->
+                <div class="section2png">
+                    <img src="img/product2.png">
+                   
+                    <div class="section2para">
+                        <h2>50% OFF</h2>
+                        <p>EXOTIC PLANTS</p>
+                        <p>Bring nature closer to you.</p>
+                        <a href="#" class="s-2btn">Shop Now</a>
+                    </div>    
+                
+                </div>
+                <!-- slide3 -->
+                <div class="section2png">
+                    <img src="img/product2.png">
+                   
+                    <div class="section2para">
+                        <h2>30% OFF</h2>
+                        <p>INDOOR PLANTS</p>
+                        <p>Create your perfect green corner.</p>
+                        <a href="#" class="s-2btn">Shop Now</a>
+                    </div>    
+                
+                </div>
+
+             </div>
+             <!-- Navigation Buttons -->
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+
+        </div>
+        <!-- s-3 -->
+        <div class="zoom-container">
+            <div class="zoom-image">
+              <img src="img/about.png" alt="Plant 1" id="zoomImg">
+            </div>
+            <div class="zoom-controls">
+              <button onclick="zoomIn()">Zoom In</button>
+              <button onclick="zoomOut()">Zoom Out</button>
+            </div>
+        </div>
+        <!-- s-4 -->
+        <div class="gallery-container">
+            <h2>OUR PRODUCTS</h2>
+            <div class="filter-buttons">
+              <button onclick="filterGallery('all')">Featured</button>
+              <button onclick="filterGallery('bestseller')">Bestseller</button>
+              <button onclick="filterGallery('latest')">Latest</button>
+            </div>
+          
+            <div class="gallery-grid">
+              <!-- Featured Items -->
+              <div class="gallery-item featured">
+                <img src="img/product1.png" alt="Featured Plant">
+                <p>American Marigold</p>
+                <p>$25.45</p>
+              </div>
+              <div class="gallery-item featured">
+                <img src="img/product2.png" alt="Featured Plant">
+                <p>Black Eyed Susan</p>
+                <p>$30.45</p>
+              </div>
+          
+              <!-- Bestseller Items -->
+              <div class="gallery-item bestseller">
+                <img src="img/product3.png" alt="Bestseller Plant">
+                <p>Bleeding Heart</p>
+                <p>$50.45</p>
+              </div>
+          
+              <!-- Latest Items -->
+              <div class="gallery-item latest">
+                <img src="img/product4.png" alt="Latest Plant">
+                <p>Bloody Cranesbill</p>
+                <p>$40.00</p>
+              </div>
+              <div class="gallery-item latest">
+                <img src="img/product5.png" alt="Latest Plant">
+                <p>Common Yarrow</p>
+                <p>$45.00</p>
+              </div>
+            </div>
+        </div>
+        <!-- s-5 -->
+          
+          
+       
+    </div>  
+
+
+    <script src="script.js"></script>
+</body>
+</html>
