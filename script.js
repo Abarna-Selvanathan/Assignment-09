@@ -2,7 +2,7 @@
 const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('night-mode');
-
+ 
   // Toggle button icon (optional)
   if (document.body.classList.contains('night-mode')) {
     themeToggle.textContent = '☀️'; // Change to sun icon
@@ -10,6 +10,9 @@ themeToggle.addEventListener('click', () => {
     themeToggle.textContent = '🌙'; // Change to moon icon
   }
 });
+
+
+
 
 // bookmark
 // Get all navbar links
@@ -48,6 +51,9 @@ navLinks.forEach((link) => {
   });
 });
 
+
+
+
 // s-2
 let currentIndex = 0;
 const slides = document.querySelectorAll('.section2png');
@@ -73,20 +79,10 @@ function updateCarousel() {
 // Auto-slide functionality
 setInterval(nextSlide, 3000); // Change every 3 seconds
 
-// s-3
-let scale = 1;
 
-function zoomIn() {
-  scale += 0.2;
-  document.getElementById("zoomImg").style.transform = `scale(${scale})`;
-}
 
-function zoomOut() {
-  if (scale > 1) {
-    scale -= 0.2;
-    document.getElementById("zoomImg").style.transform = `scale(${scale})`;
-  }
-}
+
+
 // s-4
 function filterGallery(category) {
   const items = document.querySelectorAll('.gallery-item');
@@ -105,19 +101,9 @@ function filterGallery(category) {
 // Default: Show all featured items
 filterGallery('all');
 
-// s-5
-document.querySelectorAll('.faq-question').forEach(question => {
-  question.addEventListener('click', () => {
-    const answer = question.nextElementSibling;
-    const toggle = question.querySelector('.toggle');
 
-    // Toggle visibility of the answer
-    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
 
-    // Toggle "+" and "-" symbol
-    toggle.textContent = toggle.textContent === '+' ? '-' : '+';
-  });
-});
+
 // s-6
 const bullets = document.querySelectorAll('.bullet');
 const testimonials = document.querySelectorAll('.testimonial');
@@ -133,6 +119,11 @@ bullets.forEach((bullet, index) => {
     testimonials[index].classList.add('active');
   });
 });
+
+
+
+
+
 // footer
 document.getElementById('subscribe-form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
