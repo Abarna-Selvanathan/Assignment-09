@@ -1,265 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 09</title>
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
+
 <body>
-    <div class="main">
-        <header>
-            <nav class="navbar">
-                <div class="logo"> 
-                    <img src="img/favicon.png"> 
-                    PLANTEX
-                    
-                </div>
-                <ul> 
-                    <li><a href="#section1" class="nav-link" id="section1">Home</a></li>
-                    <li><a href="#section2" class="nav-link" id="section2">About</a></li>
-                    <li><a href="#section3" class="nav-link" id="section3">products</a></li>
-                    <li><a href="#section4" class="nav-link" id="section4">FAQs</a></li>
-                    <li><a href="#section5" class="nav-link" id="section5">Contact</a></li>
-                    <button id="theme-toggle">🌙</button>
-
-                </ul>
-               
-                
-            </nav>
-        </header>
-        <div class="home">
-            <div class="homepng">
-                <img src="img/home.png">
-            </div>    
-            <div class="homepara">
-                <h class="homeh1" >Plants will make your life better</h><br><br>
-                <h class="homeh2">Create incredible plant design for your offices or apartments, add freshness to your own home.
-                </h>
-                <br>
-                <button class="homebutton">Explore ▼</button>
-                
-            </div>
-        
+  <div class="main">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/favicon.png">
+          <h1>PLANTEX</h1>
         </div>
-        <div class="about">
-            <div class="aboutpng">
-                <img src="img/about.png">
-            </div>    
-            <div class="aboutpara">
-                <h class="abouth1" >Who we really are & Why choose us</h><br><br>
-                <h class="abouth2">We have over 4000+ satisfied clients and our customer trust our plant process and delivery service every time.
-                </h><br><br>
-                <h class="abouth3">We always deliver on time.<br>
-                    We allow you to select and care for your plants.<br>
-                    We always place the plant in a clean, safe place.<br>
-                    100% money back guaranteed.</h><br><br>
-                <h3 class="abouth4">Shop Now ➔</h3>
-                
-            </div>
-        
-        </div>
-        <div class="section-2">
-            <div class="carousel-slide">
-                <!-- silde1 -->
-                <div class="section2png">
-                    <img src="img/product1.png">
-                   
-                    <div class="section2para">
-                        <h2>65% OFF</h2>
-                        <p>NEW PLANT</p>
-                        <p>Promia. 100% Natural, Organic & Plant Shop.</p>
-                        <a href="#" class="s-2btn">Discover Now</a>
-                    </div>     
-                
-                </div>
-                <!-- slide2 -->
-                <div class="section2png">
-                    <img src="img/product2.png">
-                   
-                    <div class="section2para">
-                        <h2>50% OFF</h2>
-                        <p>EXOTIC PLANTS</p>
-                        <p>Bring nature closer to you.</p>
-                        <a href="#" class="s-2btn">Shop Now</a>
-                    </div>    
-                
-                </div>
-                <!-- slide3 -->
-                <div class="section2png">
-                    <img src="img/product2.png">
-                   
-                    <div class="section2para">
-                        <h2>30% OFF</h2>
-                        <p>INDOOR PLANTS</p>
-                        <p>Create your perfect green corner.</p>
-                        <a href="#" class="s-2btn">Shop Now</a>
-                    </div>    
-                
-                </div>
-
-             </div>
-             <!-- Navigation Buttons -->
-            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
-
-        </div>
-        <!-- s-3 -->
-        <div class="zoom-container">
-            <div class="zoom-image">
-              <img src="img/about.png" alt="Plant 1" id="zoomImg">
-            </div>
-            <div class="zoom-controls">
-              <button onclick="zoomIn()">Zoom In</button>
-              <button onclick="zoomOut()">Zoom Out</button>
-            </div>
-        </div>
-        <!-- s-4 -->
-        <div class="gallery-container">
-            <h2>OUR PRODUCTS</h2>
-            <div class="filter-buttons">
-              <button onclick="filterGallery('all')">Featured</button>
-              <button onclick="filterGallery('bestseller')">Bestseller</button>
-              <button onclick="filterGallery('latest')">Latest</button>
-            </div>
-          
-            <div class="gallery-grid">
-              <!-- Featured Items -->
-              <div class="gallery-item featured">
-                <img src="img/product1.png" alt="Featured Plant">
-                <p>American Marigold</p>
-                <p>$25.45</p>
-              </div>
-              <div class="gallery-item featured">
-                <img src="img/product2.png" alt="Featured Plant">
-                <p>Black Eyed Susan</p>
-                <p>$30.45</p>
-              </div>
-          
-              <!-- Bestseller Items -->
-              <div class="gallery-item bestseller">
-                <img src="img/product3.png" alt="Bestseller Plant">
-                <p>Bleeding Heart</p>
-                <p>$50.45</p>
-              </div>
-          
-              <!-- Latest Items -->
-              <div class="gallery-item latest">
-                <img src="img/product4.png" alt="Latest Plant">
-                <p>Bloody Cranesbill</p>
-                <p>$40.00</p>
-              </div>
-              <div class="gallery-item latest">
-                <img src="img/product5.png" alt="Latest Plant">
-                <p>Common Yarrow</p>
-                <p>$45.00</p>
-              </div>
-            </div>
-        </div>
-        <!-- s-5 -->
-        <section class="faq-section">
-            <h2>Some common questions were often asked</h2>
-            <div class="faq-container">
-              <div class="faq-item">
-                <div class="faq-question">Why are my flowers rolling or dying? <span class="toggle">+</span></div>
-                <div class="faq-answer">The flowers might be lacking water, sunlight, or proper nutrients. Make sure to monitor the plant’s needs.</div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-question">What causes leaves to become paler? <span class="toggle">+</span></div>
-                <div class="faq-answer">Pale leaves often indicate a lack of nutrients or insufficient sunlight exposure.</div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-question">What causes brown crispy leaves? <span class="toggle">+</span></div>
-                <div class="faq-answer">Brown crispy leaves can result from underwatering, overwatering, or excessive heat.</div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-question">How do I choose a plant? <span class="toggle">+</span></div>
-                <div class="faq-answer">Choose a plant based on the light and humidity levels of your space. Consider your time for care and maintenance.</div>
-              </div>
-            </div>
-          </section>
-        <!-- s-6 -->
-        <section class="team-section">
-            <h2>What Say Client</h2>
-            <p>Discover what our clients have to say about our work. Your feedback is important to us!</p>
-            
-            <div class="testimonials">
-              <div class="testimonial active">
-                <div class="testimonial-content">
-                  <img src="img/product1.png" alt="Client 1">
-                  <h3>Patricia Souza</h3>
-                  <p>Client</p>
-                  <p>"Excellent service, professional team, and great results! Highly recommend."</p>
-                </div>
-              </div>
-              <div class="testimonial">
-                <div class="testimonial-content">
-                  <img src="img/product2.png" alt="Client 2">
-                  <h3>Christine Santos</h3>
-                  <p>Client</p>
-                  <p>"Great support and attention to detail. They truly exceeded our expectations."</p>
-                </div>
-              </div>
-              <div class="testimonial">
-                <div class="testimonial-content">
-                  <img src="img/product3.png" alt="Client 3">
-                  <h3>Matthew Smith</h3>
-                  <p>Client</p>
-                  <p>"Amazing experience working with the team! They delivered on time with excellent quality."</p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Pagination Bullets -->
-            <div class="pagination">
-              <span class="bullet active" data-index="0"></span>
-              <span class="bullet" data-index="1"></span>
-              <span class="bullet" data-index="2"></span>
-            </div>
-          </section>
-          <!-- footer -->
-          <footer class="footer-section">
-            <div class="footer-container">
-              <div class="footer-left">
-                <h3>PLANTEX</h3>
-                <p>Subscribe to our newsletter to stay updated</p>
-                <form id="subscribe-form">
-                  <input type="email" id="email" placeholder="Enter your email" required>
-                  <button type="submit">Subscribe</button>
-                </form>
-              </div>
-              <div class="footer-middle">
-                <h4>Our Address</h4>
-                <p>1234 - Peru</p>
-                <p>Los Angeles - 4200</p>
-                <p>Chile - 786</p>
-              </div>
-              <div class="footer-right">
-                <h4>Contact Us</h4>
-                <p>+999 666 777</p>
-                <div class="social-icons">
-                  <a href="#">🔗</a>
-                  <a href="#">📧</a>
-                  <a href="#">📞</a>
-                </div>
-                <h4>We accept all credit cards</h4>
-                <img src="/img/card1.png" alt="Credit Card Logos">
-                <img src="/img/card2.png" alt="Credit Card Logos">
-                <img src="/img/card3.png" alt="Credit Card Logos">
-                <img src="/img/card4.png" alt="Credit Card Logos">
-                  
-              </div>
-            </div>
-            <div class="footer-bottom">
-              <p>© 2024 Plantex. All rights reserved</p>
-            </div>
-          </footer>
-          
-       
-    </div>  
+        <ul>
+          <li><a href="#home" class="nav-link active" id="section1">Home</a></li>
+          <li><a href="#anout" class="nav-link" id="section2">About</a></li>
+          <li><a href="#product" class="nav-link" id="section3">Products</a></li>
+          <li><a href="#faqs" class="nav-link" id="section4">FAQs</a></li>
+          <li><a href="#team" class="nav-link" id="section5">Our Team</a></li>
+          <li><a href="#contact" class="nav-link" id="section5">Contact Us</a></li>
+          <button id="theme-toggle">🌙</button>
+        </ul>
+      </nav>
+    </header>
 
 
-    <script src="script.js"></script>
+    <div class="home" id="home">
+      <div class="homepara">
+        <h1 class="homeh1">Plants will make your life better</h1>
+        <p class="homep">Create incredible plant design for your offices or apartments, add freshness to your own home.</p>
+        <button class="homebtn">Explore ▼</button>
+      </div>
+      <div class="homepng">
+        <img src="img/home.png">
+      </div>
+
+    </div>
+    <div class="about" id="about">
+      <div class="aboutpng">
+        <img src="img/about.png">
+      </div>
+      <div class="aboutpara">
+        <h1 class="abouth1">Who we really are & Why choose us</h1>
+        <p class="aboutp1">We have over 4000+ satisfied clients and our customer trust our plant process and delivery
+          service every time.
+        </p>
+        <p class="aboutp2">We always deliver on time. <br>
+          We allow you to select and care for your plants. <br>
+          We always place the plant in a clean, safe place. <br>
+          100% money back guaranteed.</p>
+        <a href="#products">Shop Now ➔</a>
+
+      </div>
+
+    </div>
+
+    
+
+    <div class="offer">
+      <div class="slide">
+        <div class="carousel-slide">
+          <!-- silde1 -->
+          <div class="section2png">
+            <img src="img/product1.png">
+
+            <div class="section2para">
+              <h2>65% OFF</h2>
+              <h1>NEW PLANT</h1>
+              <p>Promia. 100% Natural, Organic & Plant Shop.</p>
+              <a href="#" class="s-2btn">Discover Now</a>
+            </div>
+  
+          </div>
+          <!-- slide2 -->
+          <div class="section2png">
+            <img src="img/product2.png">
+  
+            <div class="section2para">
+              <h2>50% OFF</h2>
+              <h1>EXOTIC PLANTS</h1>
+              <p>Bring nature closer to you.</p>
+              <a href="#" class="s-2btn">Shop Now</a>
+            </div>
+  
+          </div>
+          <!-- slide3 -->
+          <div class="section2png">
+            <img src="img/product3.png">
+  
+            <div class="section2para">
+              <h2>30% OFF</h2>
+              <h1>INDOOR PLANTS</h1>
+              <p>Create your perfect green corner.</p>
+              <a href="#" class="s-2btn">Shop Now</a>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+
+
+    <!-- products -->'
+    <div class="gallery-container">
+      <h2>OUR PRODUCTS</h2>
+      <div class="filter-buttons">
+        <button onclick="filterGallery('all')">Featured</button>
+        <button onclick="filterGallery('bestseller')">Bestseller</button>
+        <button onclick="filterGallery('latest')">Latest</button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Featured Items -->
+        <div class="gallery-item featured">
+          <img src="img/product1.png" alt="Featured Plant">
+          <p>American Marigold</p>
+          <p>$25.45</p>
+        </div>
+        <div class="gallery-item featured">
+          <img src="img/product2.png" alt="Featured Plant">
+          <p>Black Eyed Susan</p>
+          <p>$30.45</p>
+        </div>
+
+        <!-- Bestseller Items -->
+        <div class="gallery-item bestseller">
+          <img src="img/product3.png" alt="Bestseller Plant">
+          <p>Bleeding Heart</p>
+          <p>$50.45</p>
+        </div>
+
+        <!-- Latest Items -->
+        <div class="gallery-item latest">
+          <img src="img/product4.png" alt="Latest Plant">
+          <p>Bloody Cranesbill</p>
+          <p>$40.00</p>
+        </div>
+        <div class="gallery-item latest">
+          <img src="img/product5.png" alt="Latest Plant">
+          <p>Common Yarrow</p>
+          <p>$45.00</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <h2>Some common questions were often asked</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">Why are my flowers rolling or dying? <span class="toggle">+</span></div>
+          <div class="faq-answer">The flowers might be lacking water, sunlight, or proper nutrients. Make sure to
+            monitor the plant’s needs.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What causes leaves to become paler? <span class="toggle">+</span></div>
+          <div class="faq-answer">Pale leaves often indicate a lack of nutrients or insufficient sunlight exposure.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What causes brown crispy leaves? <span class="toggle">+</span></div>
+          <div class="faq-answer">Brown crispy leaves can result from underwatering, overwatering, or excessive heat.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I choose a plant? <span class="toggle">+</span></div>
+          <div class="faq-answer">Choose a plant based on the light and humidity levels of your space. Consider your
+            time for care and maintenance.</div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- s-6 -->
+    <section class="team-section">
+      <h2>What Say Client</h2>
+      <p>Discover what our clients have to say about our work. Your feedback is important to us!</p>
+
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <img src="img/product1.png" alt="Client 1">
+            <h3>Patricia Souza</h3>
+            <p>Client</p>
+            <p>"Excellent service, professional team, and great results! Highly recommend."</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <img src="img/product2.png" alt="Client 2">
+            <h3>Christine Santos</h3>
+            <p>Client</p>
+            <p>"Great support and attention to detail. They truly exceeded our expectations."</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <img src="img/product3.png" alt="Client 3">
+            <h3>Matthew Smith</h3>
+            <p>Client</p>
+            <p>"Amazing experience working with the team! They delivered on time with excellent quality."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>PLANTEX</h3>
+          <p>Subscribe to our newsletter to stay updated</p>
+          <form id="subscribe-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-middle">
+          <h4>Our Address</h4>
+          <p>1234 - Peru</p>
+          <p>Los Angeles - 4200</p>
+          <p>Chile - 786</p>
+        </div>
+        <div class="footer-right">
+          <h4>Contact Us</h4>
+          <p>+999 666 777</p>
+          <div class="social-icons">
+            <a href="#">🔗</a>
+            <a href="#">📧</a>
+            <a href="#">📞</a>
+          </div>
+          <h4>We accept all credit cards</h4>
+          <img src="/img/card1.png" alt="Credit Card Logos">
+          <img src="/img/card2.png" alt="Credit Card Logos">
+          <img src="/img/card3.png" alt="Credit Card Logos">
+          <img src="/img/card4.png" alt="Credit Card Logos">
+
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Plantex. All rights reserved</p>
+      </div>
+    </footer>
+
+
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
